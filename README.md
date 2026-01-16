@@ -1,5 +1,3 @@
-# supervised_machine_learning_regression_and_classification
-Course 1 of 3 Machine Learning Specialization by Andrew Ng
 # Machine Learning Specialization by Andrew Ng - Course 1 Summary
 
 ## **Course Title:** Supervised Machine Learning: Regression and Classification
