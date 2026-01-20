@@ -1,0 +1,35 @@
+% 1. Define the range of Weight (w) and Bias (b)
+
+w = linspace(-20, 20, 100);
+b = linspace(20, -20, 100);
+
+% 2. Make 2D grid
+
+[W, B] = meshgrid(w, b);
+
+% 3. Calculate Cost Function J(w,b)
+
+% Formula for a parabolic bowl: J = w^2 + b^2
+
+J = W.^2 + B.^2;
+
+% 4. Create Surface plot 
+
+figure;
+surf(W, B, J);
+
+% 5. Labels and Aesthetics 
+
+%shading interp; % For smooth transition
+colormap("turbo"); % For Colors (Can choose parula, jet or turbo)
+%colorbar; % To show side scale
+xlabel('w');
+ylabel('b');
+zlabel('J(w, b)');
+title('Cost Function J(w, b)');
+
+% To set view angle
+
+view(-45, 30);
+grid on;
+
